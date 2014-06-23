@@ -13,9 +13,25 @@
 		B2C9B84C1954E4F0008C680E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C9B84A1954E4F0008C680E /* Main.storyboard */; };
 		B2C9B84E1954E4F0008C680E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C9B84D1954E4F0008C680E /* Images.xcassets */; };
 		B2C9B85A1954E4F1008C680E /* Color_WheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C9B8591954E4F1008C680E /* Color_WheelTests.m */; };
+		B2C9B8691954EFD0008C680E /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9B8681954EFD0008C680E /* PageContentViewController.swift */; };
+		B2EAB32D19589B67007CB3A5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EAB32C19589B67007CB3A5 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B20E9B6B1954F5A8005416AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C9B8351954E4F0008C680E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C9B83C1954E4F0008C680E;
+			remoteInfo = "Color Wheel";
+		};
+		B20E9B6D1954F5A8005416AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2C9B8351954E4F0008C680E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C9B83C1954E4F0008C680E;
+			remoteInfo = "Color Wheel";
+		};
 		B2C9B8541954E4F1008C680E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2C9B8351954E4F0008C680E /* Project object */;
@@ -38,6 +54,9 @@
 		B2C9B8531954E4F1008C680E /* Color WheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color WheelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C9B8581954E4F1008C680E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2C9B8591954E4F1008C680E /* Color_WheelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color_WheelTests.m; sourceTree = "<group>"; };
+		B2C9B8631954EBC9008C680E /* Color Wheel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Color Wheel-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2C9B8681954EFD0008C680E /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		B2EAB32C19589B67007CB3A5 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +80,7 @@
 		B2C9B8341954E4F0008C680E = {
 			isa = PBXGroup;
 			children = (
+				B2C9B8681954EFD0008C680E /* PageContentViewController.swift */,
 				B2C9B83F1954E4F0008C680E /* Color Wheel */,
 				B2C9B8561954E4F1008C680E /* Color WheelTests */,
 				B2C9B83E1954E4F0008C680E /* Products */,
@@ -79,13 +99,16 @@
 		B2C9B83F1954E4F0008C680E /* Color Wheel */ = {
 			isa = PBXGroup;
 			children = (
-				B2C9B8441954E4F0008C680E /* AppDelegate.h */,
 				B2C9B8451954E4F0008C680E /* AppDelegate.m */,
-				B2C9B8471954E4F0008C680E /* ViewController.h */,
-				B2C9B8481954E4F0008C680E /* ViewController.m */,
-				B2C9B84A1954E4F0008C680E /* Main.storyboard */,
+				B2C9B8441954E4F0008C680E /* AppDelegate.h */,
 				B2C9B84D1954E4F0008C680E /* Images.xcassets */,
+				B2C9B84A1954E4F0008C680E /* Main.storyboard */,
+				B2C9B8481954E4F0008C680E /* ViewController.m */,
+				B2C9B8471954E4F0008C680E /* ViewController.h */,
 				B2C9B8401954E4F0008C680E /* Supporting Files */,
+				B2EAB32F1958A193007CB3A5 /* Models */,
+				B2EAB32C19589B67007CB3A5 /* Color.swift */,
+				B2C9B8631954EBC9008C680E /* Color Wheel-Bridging-Header.h */,
 			);
 			path = "Color Wheel";
 			sourceTree = "<group>";
@@ -114,6 +137,13 @@
 				B2C9B8581954E4F1008C680E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2EAB32F1958A193007CB3A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +178,8 @@
 			);
 			dependencies = (
 				B2C9B8551954E4F1008C680E /* PBXTargetDependency */,
+				B20E9B6C1954F5A8005416AF /* PBXTargetDependency */,
+				B20E9B6E1954F5A8005416AF /* PBXTargetDependency */,
 			);
 			name = "Color WheelTests";
 			productName = "Color WheelTests";
@@ -216,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C9B8491954E4F0008C680E /* ViewController.m in Sources */,
+				B2C9B8691954EFD0008C680E /* PageContentViewController.swift in Sources */,
 				B2C9B8461954E4F0008C680E /* AppDelegate.m in Sources */,
+				B2EAB32D19589B67007CB3A5 /* Color.swift in Sources */,
 				B2C9B8431954E4F0008C680E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +266,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B20E9B6C1954F5A8005416AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2C9B83C1954E4F0008C680E /* Color Wheel */;
+			targetProxy = B20E9B6B1954F5A8005416AF /* PBXContainerItemProxy */;
+		};
+		B20E9B6E1954F5A8005416AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2C9B83C1954E4F0008C680E /* Color Wheel */;
+			targetProxy = B20E9B6D1954F5A8005416AF /* PBXContainerItemProxy */;
+		};
 		B2C9B8551954E4F1008C680E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B2C9B83C1954E4F0008C680E /* Color Wheel */;
@@ -332,9 +376,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Color Wheel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Color Wheel/Color Wheel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -343,9 +390,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Color Wheel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Color Wheel/Color Wheel-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -404,6 +453,7 @@
 				B2C9B85F1954E4F1008C680E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2C9B8601954E4F1008C680E /* Build configuration list for PBXNativeTarget "Color WheelTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +462,7 @@
 				B2C9B8621954E4F1008C680E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
